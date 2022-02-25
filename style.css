@@ -5,9 +5,7 @@ h2{
     color: aqua;
 }
 
-#country{
-    display: flex;
-}
+
 
 .country{
     border: 3px solid gray;
@@ -19,4 +17,18 @@ button{
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+#span{
+    color: rgb(20, 235, 199);
+}
+#inpt{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+#btn{
+    border: none;
+}
+#hide{
+    display: none;
 }
