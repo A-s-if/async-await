@@ -27,13 +27,29 @@ container.innerHTML=`
                             <h1>Independent status:${country.independent}</h1>
                             <h1>Languages:${country.languages[1]}</h1>
                         </div>
-
-                        <button onclick="hide()"> Show more details <button>
+                        <br>
+                        
+                        <button onclick="showMore()" id='details-btn'> Show more details </button>
+                        <button  onclick="showLess()" id='show-less' >Show less</button>
+                        
 `
 }
 
 
-function hide(){
-    document.getElementById('hide').style.display='block'
+function showMore(){
+    document.getElementById('hide').style.display='block';
+    document.getElementById('details-btn').style.display='none';
+    document.getElementById('show-less').style.display='block';
+}
+function showLess(){
+    document.getElementById('hide').style.display='none';
+    document.getElementById('details-btn').style.display='block';
+    document.getElementById('show-less').style.display='none';
 }
 
+
+document.getElementById('inpt').addEventListener('keypress',function(even){
+    if(even.keyCode===13){
+        document.getElementById('btn').click();
+    }
+})
