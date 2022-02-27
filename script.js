@@ -29,8 +29,8 @@ container.innerHTML=`
                         </div>
                         <br>
                         
-                        <button onclick="showMore()" id='details-btn'> Show more details </button>
-                        <button  onclick="showLess()" id='show-less' >Show less</button>
+                        <button onclick="showMore()" id='show-more-btn'> Show more details </button>
+                        <button  onclick="showLess()" id='show-less-btn' >Show less</button>
                         
 `
 }
@@ -38,13 +38,13 @@ container.innerHTML=`
 
 function showMore(){
     document.getElementById('hide').style.display='block';
-    document.getElementById('details-btn').style.display='none';
-    document.getElementById('show-less').style.display='block';
+    document.getElementById('show-more-btn').style.display='none';
+    document.getElementById('show-less-btn').style.display='block';
 }
 function showLess(){
     document.getElementById('hide').style.display='none';
-    document.getElementById('details-btn').style.display='block';
-    document.getElementById('show-less').style.display='none';
+    document.getElementById('show-more-btn').style.display='block';
+    document.getElementById('show-less-btn').style.display='none';
 }
 
 
