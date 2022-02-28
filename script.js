@@ -28,12 +28,14 @@ container.innerHTML=`
                             <h1>Languages:${country.languages[1]}</h1>
                         </div>
                         <br>
-                        
+                        <div id='button'>
                         <button onclick="showMore()" id='show-more-btn'> Show more details </button>
                         <button  onclick="showLess()" id='show-less-btn' >Show less</button>
-                        
+                        </div>
 `
 }
+
+
 
 
 function showMore(){
@@ -50,6 +52,6 @@ function showLess(){
 
 document.getElementById('inpt').addEventListener('keypress',function(even){
     if(even.keyCode===13){
-        document.getElementById('btn').click();
+        document.getElementById('search-btn').click();
     }
 })
